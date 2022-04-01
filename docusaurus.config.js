@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const filecoin = require('./static/filecoin.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -102,7 +103,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus'
+                href: 'https://github.com/Permissionless-Software-Foundation/cashstack.info'
               }
             ]
           }
