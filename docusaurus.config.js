@@ -97,8 +97,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog'
+                label: 'Filecoin',
+                to: `https://${filecoin.cid}.ipfs.dweb.link`
               },
               {
                 label: 'GitHub',
