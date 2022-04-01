@@ -3,13 +3,14 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const filecoin = require('./static/filecoin.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CashStack',
   tagline: 'A JavaScript Stack for Sovereign Money',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/cashstack.info/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
@@ -58,7 +59,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Permissionless-Software-Foundation/cashstack.info',
             label: 'GitHub',
             position: 'right'
           }
@@ -97,8 +98,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog'
+                label: 'Filecoin',
+                to: `https://${filecoin.cid}.ipfs.dweb.link`
               },
               {
                 label: 'GitHub',
