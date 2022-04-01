@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'permissionless-software-foundation', // Usually your GitHub org/user name.
   projectName: 'cashstack.info', // Usually your repo name.
-  trailingSlash: false
+  trailingSlash: false,
 
   presets: [
     [
