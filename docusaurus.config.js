@@ -8,8 +8,8 @@ const filecoin = require('./static/filecoin.json')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CashStack',
-  tagline: 'A JavaScript Stack for Sovereign Money',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'A JavaScript Stack for Sovereign Money and Communication',
+  url: 'https://permissionless-software-foundation.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -55,9 +55,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial'
+            label: 'Docs'
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/Permissionless-Software-Foundation/cashstack.info',
             label: 'GitHub',
@@ -72,7 +72,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'CashStack',
                 to: '/docs/intro'
               }
             ]
@@ -81,16 +81,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus'
+                label: 'Telegram',
+                href: 'https://t.me/bch_js_toolkit'
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus'
+                href: 'https://twitter.com/PSF_DAO'
               }
             ]
           },
@@ -103,12 +99,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus'
+                href: 'https://github.com/Permissionless-Software-Foundation/cashstack.info'
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} released under MIT License.`
       },
       prism: {
         theme: lightCodeTheme,
