@@ -32,8 +32,8 @@ export default function Home () {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description='A JavaScript Stack for Sovereign Money'
+      title={`${siteConfig.title}`}
+      description='A JavaScript Stack for Sovereign Money and Communication'
     >
       <HomepageHeader />
       <main>
