@@ -13,8 +13,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'permissionless-software-foundation', // Usually your GitHub org/user name.
+  projectName: 'cashstack.info', // Usually your repo name.
+  trailingSlash: false
 
   presets: [
     [
