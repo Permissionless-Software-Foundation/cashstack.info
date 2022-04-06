@@ -7,7 +7,7 @@ sidebar_position: 2
 The Cash Stack includes [Gatsby](https://www.gatsbyjs.com/) Starters, Themes, and Plugins for create a web-based, non-custodial wallet. They include the [Capacitor](https://capacitorjs.com/) libraries to easily compile those apps into iOS and Android phone apps. The [Plugin structure](https://youtu.be/NGnuwLJWqZ4) allows developers to quickly build and share extensions to the wallet app.
 
 ## Gatsby Starter
-The fastest way for a business to launch its own white-labeled wallet app, is to fork [bch-wallet-starter](https://github.com/Permissionless-Software-Foundation/bch-wallet-starter). This will immediately give you an app that you can start customizing and hacking on. Out-of-the-box, it will have the same features as [wallet.fullstack.cash](https://bchn-wallet.fullstack.cash).
+The fastest way for a business to launch its own white-labeled wallet app, is to fork [bch-wallet-starter](https://github.com/Permissionless-Software-Foundation/bch-wallet-starter). This will immediately give you an app that you can start customizing and hacking on. Out-of-the-box, it will have the same features as [demo-wallet.fullstack.cash](https://demo-wallet.fullstack.cash).
 
 <iframe width="532" height="329" src="https://www.youtube.com/embed/G7ptg7VIRnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
