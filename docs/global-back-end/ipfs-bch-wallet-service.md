@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# ipfs-bch-wallet-service (IPFS JSON RPC)
 
 Docusaurus can manage multiple versions of your docs.
 

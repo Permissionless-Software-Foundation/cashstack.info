@@ -8,7 +8,7 @@ const filecoin = require('./static/filecoin.json')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CashStack',
-  tagline: 'A JavaScript Stack for Sovereign Money and Communication',
+  tagline: 'A JavaScript Framework for Sovereign Money and Data',
   url: 'https://permissionless-software-foundation.github.io',
   baseUrl: '/cashstack.info/',
   onBrokenLinks: 'throw',
@@ -73,7 +73,7 @@ const config = {
             items: [
               {
                 label: 'CashStack',
-                to: '/docs/intro'
+                to: '/docs/overview/introduction'
               }
             ]
           },

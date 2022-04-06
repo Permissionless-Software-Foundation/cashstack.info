@@ -10,19 +10,19 @@ import communityIcon from '../../../static/img/community-icon.png'
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Documentation',
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     img: bookIcon,
     description: (
       <>
         <p>
-          Docusaurus was designed from the ground up to be easily installed and
-          used to get your website up and running quickly.
+          Read about the differnet layers of the CashStack framework, and the
+          different open source projects that it is made from.
         </p>
         <div>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/intro'
+            to='/docs/overview/introduction'
           >
             Read Docs
           </Link>
@@ -37,9 +37,9 @@ const FeatureList = [
     description: (
       <>
         <p>
-          The written documentation is compliments by our currated video
-          walkthroughs. Videos start easy at the top, and they get more
-          technical as you navigate down and to the right on the videos page.
+          The written documentation is complimented by our video
+          walkthroughs. Videos start easy at the top, and get more
+          technical as you navigate down the videos page.
         </p>
         <div className={styles.buttons}>
           <Link
@@ -59,7 +59,7 @@ const FeatureList = [
     description: (
       <>
         <p>
-          Join our Telegram channel to get community-driven technical support.
+          Join our Telegram and Gitter channels to get community-driven technical support.
         </p>
         <div className={styles.buttons}>
           <Link
@@ -67,6 +67,15 @@ const FeatureList = [
             to='https://t.me/bch_js_toolkit' target='_blank'
           >
             Telegram
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className='button button--secondary button--lg'
+            to='https://gitter.im/Permissionless-Software-Foundation/bch-js' target='_blank'
+          >
+            Gitter
           </Link>
         </div>
       </>
