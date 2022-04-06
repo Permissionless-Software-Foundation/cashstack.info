@@ -73,7 +73,7 @@ const config = {
             items: [
               {
                 label: 'CashStack',
-                to: '/docs/overview/introduction'
+                to: '/docs/intro'
               }
             ]
           },
