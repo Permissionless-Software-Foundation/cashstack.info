@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Front End
 
-The Cash Stack includes [Gatsby](https://www.gatsbyjs.com/) Starters, Themes, and Plugins for create a web-based, non-custodial wallet. They include the [Capacitor](https://capacitorjs.com/) libraries to easily compile those apps into iOS and Android phone apps. The [Plugin structure](https://youtu.be/NGnuwLJWqZ4) allows developers to quickly build and share extensions to the wallet app.
+The Cash Stack includes [Gatsby](https://www.gatsbyjs.com/) Starters, Themes, and Plugins for creating a web-based, non-custodial wallet. They include the [Capacitor](https://capacitorjs.com/) libraries to easily compile those apps into iOS and Android phone apps. The [Plugin structure](#gatsby-plugins) allows developers to quickly build and share extensions to the wallet app.
 
 ## Gatsby Starter
 The fastest way for a business to launch its own white-labeled wallet app, is to fork [bch-wallet-starter](https://github.com/Permissionless-Software-Foundation/bch-wallet-starter). This will immediately give you an app that you can start customizing and hacking on. Out-of-the-box, it will have the same features as [demo-wallet.fullstack.cash](https://demo-wallet.fullstack.cash).
@@ -12,7 +12,7 @@ The fastest way for a business to launch its own white-labeled wallet app, is to
 <iframe width="532" height="329" src="https://www.youtube.com/embed/G7ptg7VIRnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Gatsby Theme
-The Gatsby Starter is just a wrapper for the [gatsby-theme-bch-wallet](https://github.com/Permissionless-Software-Foundation/gatsby-theme-bch-wallet) Gatsby Theme. If you need to hack on some of the lower-level features, forking the Theme might make more sense. Just like the Starter, the Theme includes [Capacitor](https://capacitorjs.com/) files for generating an Android or iOS app.
+The Gatsby Starter is just a wrapper for the Gatsby Theme [gatsby-theme-bch-wallet](https://github.com/Permissionless-Software-Foundation/gatsby-theme-bch-wallet). If you need to hack on some of the lower-level features, forking the Theme might make more sense. Just like the Starter, the Theme includes [Capacitor](https://capacitorjs.com/) files for generating an Android or iOS app.
 
 ## Back End Service
 The web wallet will need to connect to some back end wallet service. You can run that service yourself, or you can use wallet services provided by the PSF community. The wallet service is selected by navigating to the *Configure* tab.
@@ -47,6 +47,6 @@ Cryptographically signing a message has a wide range of applications. This plugi
 - [gatsby-plugin-bch-sign](https://github.com/Permissionless-Software-Foundation/gatsby-plugin-bch-sign)
 
 ### Post Office
-When SLP tokens are sent from one user to another, it requires some BCH to pay the transaction fees. This presents an on-boarding problem: if a new user receives tokens, but no BCH, their tokens are effectively 'stuck' until the can acquire enough BCH to pay the transaction fee. The solution to this problem is the SLP Post Office. This concept is best explained [in this video](https://youtu.be/IATkQEdRdVI), and [a second video demonstrating this plugin](https://youtu.be/vtv9bAQx5LE). This plugin enables the web wallet to work with the [Post Office Server](https://github.com/Permissionless-Software-Foundation/simpleledger-post-office-server).
+When SLP tokens are sent from one user to another, it requires some BCH to pay the transaction fees. This presents an on-boarding problem: if a new user receives tokens, but no BCH, their tokens are effectively 'stuck' until they acquire enough BCH to pay the transaction fee. The solution to this problem is the SLP Post Office. This concept is best explained [in this video](https://youtu.be/IATkQEdRdVI), and [a second video demonstrating this plugin](https://youtu.be/vtv9bAQx5LE). This plugin enables the web wallet to work with the [Post Office Server](https://github.com/Permissionless-Software-Foundation/simpleledger-post-office-server).
 
 - [bch-wallet-plugin-postoffice](https://github.com/Permissionless-Software-Foundation/bch-wallet-plugin-postoffice)
