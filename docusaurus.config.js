@@ -10,7 +10,7 @@ const config = {
   title: 'CashStack',
   tagline: 'A JavaScript Framework for Sovereign Money and Data',
   url: 'https://permissionless-software-foundation.github.io',
-  baseUrl: '/cashstack.info/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
