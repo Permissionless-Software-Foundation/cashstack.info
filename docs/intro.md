@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-The 'Cash Stack' is a framework for building Web 3 applications on BCH, eCash, AVAX X-Chain, and other UTXO-based blockchains. It sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
+The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the BCH, eCash, AVAX X-Chain, and other UTXO-based blockchains. It sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
 
 - **Censorship Resistance**: circumventing State or corporate attempts to block or tamper with data.
 - **Self Sufficiency**: reducing or eliminating dependency on third parties.
@@ -12,11 +12,13 @@ The 'Cash Stack' is a framework for building Web 3 applications on BCH, eCash, A
 - **Docker Compose** is used to abstract and orchestrate the different sub-components.
 - **Ubuntu Linux** is the target operating system for all software.
 
+The Cash Stack is not just a library or even a single repository. It is a collection of code repositories that are orchestrated much like Lego blocks. Many of the pieces are interchangeable and re-configurable. This allows a wide range of business applications to be built across several different blockchains.
+
 ## Inspiration
 
 The Cash Stack is inspired by the [OSI model](https://www.bmc.com/blogs/osi-model-7-layers/). It helps software developers discuss technical issues, by framing the conversation with regard to 'which layer in the stack' any one particular issue lives. This makes it easier to isolate (and ultimately fix) networking issues.
 
-This model applies to all blockchain-based applications, regardless of the specific blockchain used. This model applies to BTC, BCH, XEC, BSV, ETH, and AVAX.
+This model applies to all blockchain-based applications, regardless of the specific blockchain used. For example, this model applies to BTC, BCH, XEC, BSV, ETH, and AVAX.
 
 
 ![The Cash Stack](./img/cash-stack-rough.png)

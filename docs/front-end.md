@@ -50,3 +50,9 @@ Cryptographically signing a message has a wide range of applications. This plugi
 When SLP tokens are sent from one user to another, it requires some BCH to pay the transaction fees. This presents an on-boarding problem: if a new user receives tokens, but no BCH, their tokens are effectively 'stuck' until they acquire enough BCH to pay the transaction fee. The solution to this problem is the SLP Post Office. This concept is best explained [in this video](https://youtu.be/IATkQEdRdVI), and [a second video demonstrating this plugin](https://youtu.be/vtv9bAQx5LE). This plugin enables the web wallet to work with the [Post Office Server](https://github.com/Permissionless-Software-Foundation/simpleledger-post-office-server).
 
 - [bch-wallet-plugin-postoffice](https://github.com/Permissionless-Software-Foundation/bch-wallet-plugin-postoffice)
+
+## minimal-slp-wallet
+
+[minimal-slp-wallet](https://www.npmjs.com/package/minimal-slp-wallet) is a JavaScript library compiled for use in a front end browser app. It provides basic wallet functionality for working with BCH and SLP tokens. It can be configured to operate on either the Web 2 or Web 3 architecture.
+
+[minimal-avax-wallet](https://www.npmjs.com/package/minimal-avax-wallet) possesses the same functionality and interfaces, but operates on the Avalanche X-Chain blockchain.
