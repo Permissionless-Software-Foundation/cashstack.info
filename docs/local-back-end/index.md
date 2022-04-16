@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Local Back End
@@ -14,9 +14,9 @@ As illustrated in the [introduction](intro), web 2 architecture has a centralize
 
 The core piece of software making up the local back end is [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer). This app provides a [REST API](https://free-bch.fullstack.cash/#api-REST_BCH) interface for front end apps to query data about the blockchain (and broadcast transactions).
 
-`ipfs-bch-wallet-consumer` is configured to connect to one-of-many global back end services. This connection can change on-the-fly during operation in order to optimize performance. `ipfs-bch-wallet-consumer` connects to its mirror-image on the global back end: [ips-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service). This connection happens by passing end-to-end encrypted (e2ee) messages over the [IPFS](https://ipfs.io) network.
+`ipfs-bch-wallet-consumer` is configured to connect to one-of-many global back end services. This connection can change on-the-fly during operation in order to optimize performance. `ipfs-bch-wallet-consumer` connects to its mirror-image on the global back end: [ips-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service). This connection happens by passing end-to-end encrypted (e2ee) messages over the [IPFS](https://ipfs.io) network, via a [Circuit Relay](/docs/local-back-end/circuit-relay).
 
-![Web 3 Architecture](./img/local-back-end-dependencies.png)
+![Web 3 Architecture](../img/local-back-end-dependencies.png)
 A dependency graph, showing how front end apps connect to Web 3 back end services.
 
 ## bch-consumer
