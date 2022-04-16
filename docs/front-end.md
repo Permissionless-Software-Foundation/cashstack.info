@@ -53,6 +53,6 @@ When SLP tokens are sent from one user to another, it requires some BCH to pay t
 
 ## minimal-slp-wallet
 
-[minimal-slp-wallet](https://www.npmjs.com/package/minimal-slp-wallet) is a JavaScript library compiled for use in a front end browser app. It provides basic wallet functionality for working with BCH and SLP tokens. It can be configured to operate on either the Web 2 or Web 3 architecture.
+[minimal-slp-wallet](https://www.npmjs.com/package/minimal-slp-wallet) is a JavaScript library compiled for use in a front end browser app. It provides basic wallet functionality for working with BCH and SLP tokens. It can be configured to operate on either the Web 2 or Web 3 architecture. It also has an instance of [bch-js](https://bchjs.fullstack.cash/) embedded into the library.
 
 [minimal-avax-wallet](https://www.npmjs.com/package/minimal-avax-wallet) possesses the same functionality and interfaces, but operates on the Avalanche X-Chain blockchain.
