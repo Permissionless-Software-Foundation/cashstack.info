@@ -14,6 +14,10 @@ The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the
 
 The Cash Stack is not just a library or even a single repository. It is a collection of code repositories that are orchestrated much like Lego blocks. Many of the pieces are interchangeable and re-configurable. This allows a wide range of business applications to be built across several different blockchains.
 
+All Cash Stack software can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
+
+The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and uncensorable data.
+
 ## Inspiration
 
 The Cash Stack is inspired by the [OSI model](https://www.bmc.com/blogs/osi-model-7-layers/). It helps software developers discuss technical issues, by framing the conversation with regard to 'which layer in the stack' any one particular issue lives. This makes it easier to isolate (and ultimately fix) networking issues.
