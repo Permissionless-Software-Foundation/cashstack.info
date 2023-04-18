@@ -18,6 +18,10 @@ All Cash Stack software can run on a standard, desktop computer with 32 GB of RA
 
 The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and censorship-resistant data.
 
+## Support
+
+If you have questions or need technical support, the PSF community maintains [this Telegram channel for technical discussions](https://t.me/bch_js_toolkit). When asking questions, keep in mind that this is an open source project. The channel is for community members to support one another, but no one is paid or expected to help anyone who is rude.
+
 ## Inspiration
 
 The Cash Stack is inspired by the [OSI model](https://www.bmc.com/blogs/osi-model-7-layers/). It helps software developers discuss technical issues, by framing the conversation with regard to 'which layer in the stack' any one particular issue lives. This makes it easier to isolate (and ultimately fix) networking issues.
