@@ -12,8 +12,8 @@ There are many full node implementations for BCH. The Cash Stack focuses on the 
 
 ### Links
 
-- [docker-bchn](https://github.com/Permissionless-Software-Foundation/docker-bchn) Docker containers.
-- [CashStrap](https://fullstack.cash/cashstrap) presynced blockchain databases
+- [docker-bchn](https://github.com/Permissionless-Software-Foundation/docker-bchn) Docker containers
+- [CashStrap](https://fullstack.cash/cashstrap) pre-synced blockchain databases
 
 ### Videos
 
