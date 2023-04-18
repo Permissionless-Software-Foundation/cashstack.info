@@ -14,9 +14,13 @@ The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the
 
 The Cash Stack is not just a library or even a single repository. It is a collection of code repositories that are orchestrated much like Lego blocks. Many of the pieces are interchangeable and re-configurable. This allows a wide range of business applications to be built across several different blockchains.
 
-All Cash Stack software can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
+All Cash Stack software can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400 USD. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
 
-The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and uncensorable data.
+The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and censorship-resistant data.
+
+## Support
+
+If you have questions or need technical support, the PSF community maintains [this Telegram channel for technical discussions](https://t.me/bch_js_toolkit). When asking questions, keep in mind that this is an open source project. The channel is for community members to support one another, but no one is paid or expected to help anyone who is rude.
 
 ## Inspiration
 
@@ -43,7 +47,7 @@ The layers of the stack show the path that data travels between an app and the b
 
 The Cash Stack was originally conceived to help communicate the software layers used by [FullStack.cash](https://fullstack.cash) and [developer.bitcoin.com](https://developer.bitcoin.com/), to show how software developers can use it to build apps on the Bitcoin Cash (BCH) blockchain. But when abstracted as above, the same conceptual framework applies to all blockchains.
 
-This is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
+Below is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
 
 ![The FullStack.cash Cash Stack](./img/cash-stack-annotated.png)
 
