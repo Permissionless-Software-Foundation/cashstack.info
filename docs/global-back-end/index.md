@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Global Back End
@@ -10,7 +10,7 @@ In the Web 3 architecture, the same thing happens, but [bch-consumer](https://ww
 
 Both architectures ultimately talk to `bch-api`, and the bottom end of the stack is the same for both. The primary difference between the two back end architectures is scale. In Web 2, the back end is centralized and uses both horizontal and vertical cloud scaling (expensive). In Web 3, the global back end is decentralized. Web 3 stacks either operate alone and self-sufficiently, or they rely on a community of [incentivized](https://github.com/Permissionless-Software-Foundation/bounties) operators to donate their resources.
 
-![Web 2 vs Web 3 Back End](./img/web2-back-end-vs-web3.png)
+![Web 2 vs Web 3 Back End](../img/web2-back-end-vs-web3.png)
 Comparing Web 2 vs Web 3 Back End Architectures
 
 ## Installation
