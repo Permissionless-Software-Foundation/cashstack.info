@@ -14,3 +14,9 @@ This REST API is primarily consumed by the [bch-consumer JavaScript library](htt
 
 - [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer) Docker containers
 - [API Reference Documentation](https://free-bch.fullstack.cash/)
+
+## Videos
+
+### Part 1 - How to Use ipfs-bch-wallet-consumer
+
+<iframe width="540" height="295" src="https://www.youtube.com/embed/7ntMPuqAX64" title="Installing Fulcrum Electrumx Indexer for BCH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
