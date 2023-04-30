@@ -76,7 +76,7 @@ This is a simple demo of the React SPA template. Given a BCH address, it will re
 
 ### Address Conversion
 
-This are a lot of different address formats used in crypto. This app is a slight variation on the Balance Checker app above. Given a BCH, SLP, legacy BTC, or eCash address, the app will convert it into its different address formats.
+There are a lot of different address formats used in crypto. This app is a slight variation on the Balance Checker app above. Given a BCH, SLP, legacy BTC, or eCash address, the app will convert it into its different address formats.
 
 - [Live Demo](https://address.fullstack.cash/)
 - [Source Code](https://github.com/Permissionless-Software-Foundation/web-app-address-conversion)
@@ -84,7 +84,7 @@ This are a lot of different address formats used in crypto. This app is a slight
 
 ### Decentralized Exchange
 
-Still under development, the PSF are in the process of building out a decentralized exchange (DEX) for trading tokens on the BCH, eCash, and AVAX blockchains. These DEX's can be used to buy and sell fungible tokens and NFTs.
+Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading tokens on the BCH, eCash, and AVAX blockchains. These DEX's can be used to buy and sell fungible tokens and NFTs.
 
 The protocol we've developed is trustless, atomic, non-custodial, and peer-to-peer. These are important qualities that distinguish it from other DEXs in the industry. Learn more by visiting the demo.
 
