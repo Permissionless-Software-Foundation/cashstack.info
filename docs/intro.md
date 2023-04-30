@@ -9,7 +9,7 @@ The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the
 - **Censorship Resistance**: circumventing State or corporate attempts to block or tamper with data.
 - **Self Sufficiency**: reducing or eliminating dependency on third parties.
 - **JavaScript** is the only programming language used.
-- **Docker Compose** is used to abstract and orchestrate the different sub-components.
+- **Docker Compose** is used to orchestrate the different sub-components. If you view the software subcomponents as 'lego blocks', Docker Compose is used to assemble the blocks into a functional application.
 - **Ubuntu Linux** is the target operating system for all software.
 
 The Cash Stack is maintained by the [Permissionless Software Foundation](https://psfoundation.info). It is the primary tool used to fulfil the PSF mission to *develop, promote, and maintain software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic activity.*

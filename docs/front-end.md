@@ -82,16 +82,6 @@ There are a lot of different address formats used in crypto. This app is a sligh
 - [Source Code](https://github.com/Permissionless-Software-Foundation/web-app-address-conversion)
 
 
-### Decentralized Exchange
-
-Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading tokens on the BCH, eCash, and AVAX blockchains. These DEX's can be used to buy and sell fungible tokens and NFTs.
-
-The protocol we've developed is trustless, atomic, non-custodial, and peer-to-peer. These are important qualities that distinguish it from other DEXs in the industry. Learn more by visiting the demo.
-
-- [Live Demo](https://dex.fullstack.cash/)
-- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-dex)
-- [Documentation](https://bch-dex-docs.fullstack.cash/)
-
 ### Telegram and Discord Bots
 
 Crypto is all about community. But in order to communicate with your community, you must be able to filter out noise makers and spam bots.
@@ -102,3 +92,23 @@ Click the button below to join the PSF Telegram channel and try it out for yours
 
 - [PSF Telegram channel](https://t.me/permissionless_software)
 - [Source Code](https://github.com/christroutner/vip-bot)
+
+
+
+### Decentralized Exchange
+
+Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading tokens on the BCH, eCash, and AVAX blockchains. These DEX's can be used to buy and sell fungible tokens and NFTs.
+
+The protocol we've developed is trustless, atomic, non-custodial, and peer-to-peer. These are important qualities that distinguish it from other DEXs in the industry. Learn more by visiting the demo.
+
+- [Live Demo](https://dex.fullstack.cash/)
+- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-dex)
+- [Documentation](https://bch-dex-docs.fullstack.cash/)
+
+
+### Local Trade List
+
+[LocalTradeList.com](https://localtradelist.com/) is a map-based app, with the goal of lowering the friction of neighbors trading with neighbors. It's currently a prototype under heavy development, so expect some bugs. A Seller identifies themselves by placing a pin on the map. The pin is actually an NFT on the BCH blockchain. Sellers can update the token with information on the products they are selling.
+
+- [Live Demo](https://localtradelist.com/)
+- [Source Code](https://github.com/christroutner/localtradelist.com)
