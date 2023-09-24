@@ -9,10 +9,20 @@ The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the
 - **Censorship Resistance**: circumventing State or corporate attempts to block or tamper with data.
 - **Self Sufficiency**: reducing or eliminating dependency on third parties.
 - **JavaScript** is the only programming language used.
-- **Docker Compose** is used to abstract and orchestrate the different sub-components.
+- **Docker Compose** is used to orchestrate the different sub-components. If you view the software subcomponents as 'lego blocks', Docker Compose is used to assemble the blocks into a functional application.
 - **Ubuntu Linux** is the target operating system for all software.
 
+The Cash Stack is maintained by the [Permissionless Software Foundation](https://psfoundation.info). It is the primary tool used to fulfil the PSF mission to *develop, promote, and maintain software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic activity.*
+
 The Cash Stack is not just a library or even a single repository. It is a collection of code repositories that are orchestrated much like Lego blocks. Many of the pieces are interchangeable and re-configurable. This allows a wide range of business applications to be built across several different blockchains.
+
+All Cash Stack software can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400 USD. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
+
+The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and censorship-resistant data.
+
+## Support
+
+If you have questions or need technical support, the PSF community maintains [this Telegram channel for technical discussions](https://t.me/bch_js_toolkit). When asking questions, keep in mind that this is an open source project. The channel is for community members to support one another, but no one is paid or expected to help anyone who is rude.
 
 ## Inspiration
 
@@ -39,11 +49,11 @@ The layers of the stack show the path that data travels between an app and the b
 
 The Cash Stack was originally conceived to help communicate the software layers used by [FullStack.cash](https://fullstack.cash) and [developer.bitcoin.com](https://developer.bitcoin.com/), to show how software developers can use it to build apps on the Bitcoin Cash (BCH) blockchain. But when abstracted as above, the same conceptual framework applies to all blockchains.
 
-This is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
+Below is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
 
 ![The FullStack.cash Cash Stack](./img/cash-stack-annotated.png)
 
-The web 2 app is usually broken up into to a 'front end' and a 'back end'. Many software developers specialize in one of these areas. Services like FullStack.cash provide the back end infrastructure-as-a-service.
+The web 2 app is usually broken up into to a 'front end' and a 'back end'. Many software developers specialize in one of these areas. Services like [FullStack.cash](https://fullstack.cash) provide the back end infrastructure-as-a-service.
 
 ![Web 2 Cash Stack](./img/cash-stack-web-2.png)
 
@@ -55,8 +65,8 @@ This architecture is also expensive. It's not practical to run this architecture
 
 The Web 3.0 Cash Stack inserts two new blocks into the middle of the stack, which are mirror images of one another:
 
-- *[IPFS Service Consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer)* - Provides a light-weight 'local' REST API, that proxies calls to a 'global' back end, over IPFS.
-- *[IPFS Service Provider](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service)* - Receives data over IPFS, and proxies the network calls to the compute-heavy 'global' infrastructure.
+- *[IPFS Service Consumer](/docs/local-back-end/ipfs-bch-wallet-consumer)* - Provides a light-weight 'local' REST API, that proxies calls to a 'global' back end, over IPFS.
+- *[IPFS Service Provider](/docs/global-back-end/ipfs-bch-wallet-service)* - Receives data over IPFS, and proxies the network calls to the compute-heavy 'global' infrastructure.
 
 
 ![Web 3 Cash Stack](./img/cash-stack-web-3.png)
@@ -67,8 +77,8 @@ By adding these two new pieces of software, it decouples the expensive 'global' 
 - By leveraging [Circuit Relays](https://docs.libp2p.io/concepts/circuit-relay/), this architecture is extremely resistant to attempts at censorship.<br /><br />
 - Because of the decoupling, the _local back end_ is capable of using one-of-many instances of the _global back end_. It only needs to connect to one in order to succeed, and it can choose any instance on the network.
 
-If implemented correctly, the performance should be acceptable to the end-users. The extra layers add some latency, but it provides much lower cost. Whether this architecture is appropriate for end-users depends on the specific application, but the trade-offs may be acceptable. If there is no company to pay for web 2.0 architecture, this web 3.0 architecture may be the only financially practical way to roll out an app.
+If implemented correctly, the performance should be acceptable to the end-users. The extra IPFS layers add some latency, but it provides much lower cost. Whether this architecture is appropriate for end-users depends on the specific application. If there is no company to pay for web 2.0 architecture, this web 3.0 architecture may be the only pragmatic way for communities to set up financial infrastructure.
 
-This architecture really exceeds at censorship resistance, and providing low-cost infrastructure for hobbyists developers. Developers unfamiliar with running back end infrastructure, who want to focus primarily on front end applications, can run a single, simple app to provide the local back end. Developers more comfortable with Dev Ops and running back end infrastructure, can provide the global back end infrastructure to the rest of the community, from the comfort (and cost-savings) of their own home. The [Permissionless Software Foundation](https://psfoundation.cash) (PSF) is offering [Bounties](https://github.com/Permissionless-Software-Foundation/bounties) to incentivize hobby developers to run this global back end infrastructure.
+This architecture really exceeds at censorship resistance, and providing low-cost infrastructure for hobbyists developers and local communities. Developers unfamiliar with running back end infrastructure, who want to focus primarily on front end applications, can run a single, simple app to provide the [Local Back End](/docs/local-back-end). Developers more comfortable with Dev Ops and running back end infrastructure, can provide the [Global Back End](/docs/global-back-end) infrastructure to the rest of the community, from the comfort (and cost-savings) of their own home. The [Permissionless Software Foundation](https://psfoundation.info) (PSF) is offering [Bounties](https://github.com/Permissionless-Software-Foundation/bounties) to incentivize hobby developers to run this global back end infrastructure.
 
 The rest of this documentation walks through the various software packages that the PSF maintains, and how they fit into the Cash Stack.
