@@ -1,10 +1,11 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
+title: SLP Indexer
 ---
 
 # SLP Token Indexer
 
-SLP tokens are not tracked by the full node, but are instead tracked by a separate indexer. In the way [Fulcrum indexer](/docs/global-back-end/fulcrum-indexer) tracks BCH, the PSF SLP indexer tracks SLP tokens.
+SLP tokens are not tracked by the full node, but are instead tracked by a separate indexer. In the way [Fulcrum indexer](/docs/global-back-end/fulcrum-indexer) tracks BCH, the PSF SLP indexer tracks SLP tokens. The indexer tracks tokens according to the [Type 1 specification](https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md) and the [NFT1 specification](https://github.com/simpleledger/slp-specifications/blob/master/slp-nft-1.md).
 
 ## Links
 
