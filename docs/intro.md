@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-The 'Cash Stack' is a framework for building Web 2 and Web 3 applications on the BCH, eCash, AVAX X-Chain, and other UTXO-based blockchains. It sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
+The 'Cash Stack' is a framework for building blockchain-based web and phone applications. Currently the focus is on the Bitcoin Cash blockchain, but the infrastructure may be expanded some day to other blockchains like eCash (XEC), AVAX X-Chain, and other UTXO-based blockchains. The Cash Stack sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
 
 - **Censorship Resistance**: circumventing State or corporate attempts to block or tamper with data.
 - **Self Sufficiency**: reducing or eliminating dependency on third parties.
@@ -16,15 +16,15 @@ The Cash Stack is maintained by the [Permissionless Software Foundation](https:/
 
 The Cash Stack is not just a library or even a single repository. It is a collection of code repositories that are orchestrated much like Lego blocks. Many of the pieces are interchangeable and re-configurable. This allows a wide range of business applications to be built across several different blockchains.
 
-All Cash Stack software can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400 USD. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
+All Cash Stack infrastructure can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400 USD. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
 
 The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and censorship-resistant data.
 
 ## Support
 
-If you have questions or need technical support, the PSF community maintains [this Telegram channel for technical discussions](https://t.me/bch_js_toolkit). When asking questions, keep in mind that this is an open source project. The channel is for community members to support one another, but no one is paid or expected to help anyone who is rude.
+If you have questions or need technical support, the PSF community maintains [this Telegram channel for technical discussions](https://t.me/bch_js_toolkit) and [this Telegram channel for governance discussions](https://t.me/permissionless_software). When asking questions, keep in mind that this is an open source project. The channel is for community members to support one another, but no one is paid or expected to help anyone who is rude.
 
-## Inspiration
+## The Basic Software Stack
 
 The Cash Stack is inspired by the [OSI model](https://www.bmc.com/blogs/osi-model-7-layers/). It helps software developers discuss technical issues, by framing the conversation with regard to 'which layer in the stack' any one particular issue lives. This makes it easier to isolate (and ultimately fix) networking issues.
 
@@ -47,7 +47,7 @@ The layers of the stack show the path that data travels between an app and the b
 
 ## Web 2
 
-The Cash Stack was originally conceived to help communicate the software layers used by [FullStack.cash](https://fullstack.cash) and [developer.bitcoin.com](https://developer.bitcoin.com/), to show how software developers can use it to build apps on the Bitcoin Cash (BCH) blockchain. But when abstracted as above, the same conceptual framework applies to all blockchains.
+The Cash Stack was originally conceived to help communicate the software layers used by [FullStack.cash](https://fullstack.cash) and [Bitcoin.com](https://bitcoin.com/), to show how software developers can use it to build apps on the Bitcoin Cash (BCH) blockchain. But when abstracted as above, the same conceptual framework applies to all blockchains.
 
 Below is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
 
@@ -63,18 +63,19 @@ This architecture is also expensive. It's not practical to run this architecture
 
 ## Web 3
 
-The Web 3.0 Cash Stack inserts two new blocks into the middle of the stack, which are mirror images of one another:
+The Web 3.0 Cash Stack inserts a new layer into the middle of the stack. This is called the 'IPFS Layer' and it contains two pieces of software which are mirror images of one another:
 
 - *[IPFS Service Consumer](/docs/local-back-end/ipfs-bch-wallet-consumer)* - Provides a light-weight 'local' REST API, that proxies calls to a 'global' back end, over IPFS.
-- *[IPFS Service Provider](/docs/global-back-end/ipfs-bch-wallet-service)* - Receives data over IPFS, and proxies the network calls to the compute-heavy 'global' infrastructure.
+- *[IPFS Service Provider](/docs/global-back-end/ipfs-bch-wallet-service)* - Receives data over IPFS, and proxies the network calls to the compute-heavy 'global' back end infrastructure.
 
+Front end developers can run *IPFS Service Consumer* as a light-weight 'local' back end. This pipes their network calls over the IPFS network to a remote 'global' back end. This reduces costs, improves reliability, and allows the p2p network to be built from home hardware and internet connections instead of centralized cloud servers.
 
-![Web 3 Cash Stack](./img/cash-stack-web-3.png)
+![Web 3 Cash Stack](./img/web-3-cash-stack.png)
 
 By adding these two new pieces of software, it decouples the expensive 'global' back end infrastructure, and proxies it to a much less expensive 'local' back end REST API. This has several advantages:
 
 - Because IPFS automatically handles the complex networking, it's much more pragmatic to run the expensive, global back end infrastructure from a home internet connection. This reduces the greatest cost of the Web 2.0 model.<br /><br />
-- By leveraging [Circuit Relays](https://docs.libp2p.io/concepts/circuit-relay/), this architecture is extremely resistant to attempts at censorship.<br /><br />
+- By leveraging a p2p network of home computers, this architecture is extremely resistant to attempts at censorship.<br /><br />
 - Because of the decoupling, the _local back end_ is capable of using one-of-many instances of the _global back end_. It only needs to connect to one in order to succeed, and it can choose any instance on the network.
 
 If implemented correctly, the performance should be acceptable to the end-users. The extra IPFS layers add some latency, but it provides much lower cost. Whether this architecture is appropriate for end-users depends on the specific application. If there is no company to pay for web 2.0 architecture, this web 3.0 architecture may be the only pragmatic way for communities to set up financial infrastructure.

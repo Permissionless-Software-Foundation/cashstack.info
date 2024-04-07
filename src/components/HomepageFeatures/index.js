@@ -59,23 +59,15 @@ const FeatureList = [
     description: (
       <>
         <p>
-          Join our Telegram and Gitter channels to get community-driven technical support.
+          Join our Telegram and channel to get community-driven technical support.
         </p>
+        <br />
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
             to='https://t.me/bch_js_toolkit' target='_blank'
           >
             Telegram
-          </Link>
-        </div>
-        <br />
-        <div className={styles.buttons}>
-          <Link
-            className='button button--secondary button--lg'
-            to='https://gitter.im/Permissionless-Software-Foundation/bch-js' target='_blank'
-          >
-            Gitter
           </Link>
         </div>
       </>
