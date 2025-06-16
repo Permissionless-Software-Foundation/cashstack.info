@@ -73,5 +73,7 @@ This page is a reference for looking up the default ports of the different piece
 - [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer)
 - Docker container name:
   - 4101 - IPFS TCP Port
-  - 4102 - IPFS WS Port
+  - 4103 - IPFS WS Port
   - 5015 - REST API
+- Docker container name: mongo-bch-consumer
+  - 5558 - Mongo DB connection
