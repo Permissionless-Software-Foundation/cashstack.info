@@ -4,7 +4,16 @@ sidebar_position: 1
 
 # Introduction
 
-The 'Cash Stack' is a framework for building blockchain-based web and phone applications. Currently the focus is on the Bitcoin Cash blockchain, but the infrastructure may be expanded some day to other blockchains like eCash (XEC), AVAX X-Chain, and other UTXO-based blockchains. The Cash Stack sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
+The Cash Stack is a framework for building blockchain-based web and phone applications. It allows modern 'web2' applications to access these primitive, decentralized 'web3' services:
+
+- **Money** transfer using Bitcoin Cash (BCH)
+- **Tokenization** to create fungible tokens and NFTs
+- **File Hosting** using IPFS
+- **Encrypted Messaging** using a combination of technologies
+- **Social Media** using Nostr
+
+
+Currently the focus is on the Bitcoin Cash blockchain, but the infrastructure may be expanded some day to other blockchains like eCash (XEC), AVAX X-Chain, and other UTXO-based blockchains. The Cash Stack sets itself apart from other software and blockchain-based frameworks by placing strong emphasis on the following areas:
 
 - **Censorship Resistance**: circumventing State or corporate attempts to block or tamper with data.
 - **Self Sufficiency**: reducing or eliminating dependency on third parties.
@@ -18,7 +27,7 @@ The Cash Stack is not just a library or even a single repository. It is a collec
 
 All Cash Stack infrastructure can run on a standard, desktop computer with 32 GB of RAM, 1TB SSD hard drive, and the Ubuntu Linux operating system. These typically cost about $400 USD. With just a computer and an internet connection, this infrastructure can serve between 1,000 and 10,000 users, and be maintained by a single individual. Computers can be scaled in parallel for larger applications.
 
-The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, and censorship-resistant data.
+The Cash Stack is infrastructure for communities. It allows experimentation with local currencies (tokens), international hard money (cryptocurrency), secure communication, censorship-resistant data, and unregulated social media.
 
 ## Support
 
