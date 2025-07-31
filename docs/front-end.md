@@ -4,15 +4,13 @@ sidebar_position: 2
 
 # Front End
 
-The Cash Stack includes [React templates](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-android) for creating a web-based, non-custodial wallet. It includes [Capacitor](https://capacitorjs.com/) libraries to easily compile the apps into iOS and Android phone apps. The structure allows developers to fork their own white-labeled wallet, then quickly build and share extensions to the wallet app.
-
-Our templates are also built IPFS-first, meaning that the front-end user interface is optimized for uploading to [Filecoin](https://filecoin.io) or [IPFS](https://ipfs.io), allowing developers to build censorship-resistant user interfaces to their blockchain-based applications.
+The Cash Stack includes React templates for creating a web-based, non-custodial wallet. It includes [Capacitor](https://capacitorjs.com/) libraries to easily compile the apps into iOS and Android phone apps. The structure allows developers to fork their own white-labeled wallet, then quickly build and share extensions to the wallet app.
 
 ## React SPA
 The fastest way to build a web app that communicates with a blockchain is the [react-bootstrap-web3-spa template](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa). This template starts with [Create React App](https://create-react-app.dev/) and adds the [React Bootstrap library](https://react-bootstrap.github.io/) for easy layout. It also contains the [minimal-slp-wallet library](https://www.npmjs.com/package/minimal-slp-wallet) for interacting with the BCH blockchain. This template is appropriate for building any general-purpose blockchain-based app, as opposed to just a wallet.
 
 ## White-Label Wallet
-[bch-wallet-web3-android](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-android) is forked from the above template and has additional React components added to create a wallet with basic functionality:
+[bch-wallet-web3-spa](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa) is forked from the above template. A live version of this code repository is available at [wallet.psfoundation.info](https://wallet.psfoundation.info). It has additional React components added to create a wallet with basic functionality:
 - Send and receive BCH
 - Send and recieve Tokens
 - Display token icons
@@ -20,7 +18,6 @@ The fastest way to build a web app that communicates with a blockchain is the [r
 - Sweep BCH and tokens from a paper wallet
 - Sign a message cryptographically
 
-The wallet template includes [Capacitor](https://capacitorjs.com/) libraries to compile the app into native iOS and Android phone apps.
 
 ## Back End Service
 The web wallet will need to connect to an instance of [ipfs-bch-wallet-consumer](/docs/intro) in order to communicate with the blockchain. You can run that service yourself, or you can use wallet services provided by the PSF community. The wallet service can be chosen by clicking the button at the bottom of the screen labeled 'Select a different back end server'.
@@ -29,17 +26,11 @@ The web wallet will need to connect to an instance of [ipfs-bch-wallet-consumer]
 
 No private information (keys, mnemonics, etc) is ever sent to the back end service. The service simply provides access to the blockchain and indexers, so the web wallet can query data and broadcast transactions.
 
-The list of community-provided wallet services is dynamically loaded from [this Gist](https://gist.github.com/christroutner/63c5513782181f8b8ea3eb89f7cadeb6). To run your own wallet service, you'll need to install the [Local Back End](/docs/local-back-end).
+The list of community-provided wallet services is dynamically loaded from [this JSON file](https://consumers.psfoundation.info/consumers.json). To run your own wallet service, you'll need to install the [Local Back End](/docs/local-back-end).
 
 ## minimal-slp-wallet
 
 [minimal-slp-wallet](https://www.npmjs.com/package/minimal-slp-wallet) is a JavaScript library compiled for use in a front end browser app. It provides basic wallet functionality for working with BCH and SLP tokens. It can be configured to operate on either the Web 2 or Web 3 architecture. It also has an instance of [bch-js](https://bchjs.fullstack.cash/) embedded into the library.
-
-### Other Blockchains
-
-- [minimal-avax-wallet](https://www.npmjs.com/package/minimal-avax-wallet) possesses the same functionality and interfaces, but operates on the [Avalanche X-Chain blockchain](https://www.avax.network/).
-
-- [minimal-ecash-wallet](https://www.npmjs.com/package/minimal-ecash-wallet) possesses the same functionality and interfaces, but operates on the [eCash blockchain](https://e.cash).
 
 ## Example Apps
 
@@ -47,10 +38,10 @@ Below is a list of example applications that have been built with the Cash Stack
 
 ### Wallet.FullStack.Cash
 
-[wallet.fullstack.cash](https://bchn-wallet.fullstack.cash) is an open source, white-label wallet. It provides a foundation upon which to build additional functionality. We encourage developers and businesses to fork this code base and customize it for their own needs.
+[wallet.psfoundation.info](https://wallet.psfoundation.info) is an open source, white-label wallet. It provides a foundation upon which to build additional functionality. We encourage developers and businesses to fork this code base and customize it for their own needs.
 
-- [Live Demo](https://bchn-wallet.fullstack.cash)
-- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-android)
+- [Live Demo](https://wallet.psfoundation.info)
+- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa)
 
 ### NFT Creator
 
@@ -97,18 +88,10 @@ Click the button below to join the PSF Telegram channel and try it out for yours
 
 ### Decentralized Exchange
 
-Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading tokens on the BCH, eCash, and AVAX blockchains. These DEX's can be used to buy and sell fungible tokens and NFTs.
+Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading SLP tokens on the BCH blockchain. These DEX's can be used to buy and sell fungible tokens and NFTs.
 
 The protocol we've developed is trustless, atomic, non-custodial, and peer-to-peer. These are important qualities that distinguish it from other DEXs in the industry. Learn more by visiting the demo.
 
-- [Live Demo](https://dex.fullstack.cash/)
+- [Live Demo](https://dex.psfoundation.info)
 - [Source Code](https://github.com/Permissionless-Software-Foundation/bch-dex)
-- [Documentation](https://bch-dex-docs.fullstack.cash/)
-
-
-### Local Trade List
-
-[LocalTradeList.com](https://localtradelist.com/) is a map-based app, with the goal of lowering the friction of neighbors trading with neighbors. It's currently a prototype under heavy development, so expect some bugs. A Seller identifies themselves by placing a pin on the map. The pin is actually an NFT on the BCH blockchain. Sellers can update the token with information on the products they are selling.
-
-- [Live Demo](https://localtradelist.com/)
-- [Source Code](https://github.com/christroutner/localtradelist.com)
+- [Documentation](https://dex-docs.psfoundation.info)
