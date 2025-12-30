@@ -1,0 +1,39 @@
+
+## Web 2
+
+The Cash Stack was originally conceived to help communicate the software layers used by [FullStack.cash](https://fullstack.cash) and [Bitcoin.com](https://bitcoin.com/), to show how software developers can use it to build apps on the Bitcoin Cash (BCH) blockchain. But when abstracted as above, the same conceptual framework applies to all blockchains.
+
+Below is a more specific implementation of the Cash Stack that is used by [FullStack.cash](https://fullstack.cash) for working with the Bitcoin Cash (BCH) and eCash (XEC) blockchains:
+
+![The FullStack.cash Cash Stack](../img/cash-stack-annotated.png)
+
+The web 2 app is usually broken up into to a 'front end' and a 'back end'. Many software developers specialize in one of these areas. Services like [FullStack.cash](https://fullstack.cash) provide the back end infrastructure-as-a-service.
+
+![Web 2 Cash Stack](../img/cash-stack-web-2.png)
+
+The achilles heel of this model is censorship. It's fragile in the face of any censorship. There are well-established industry best practices for censoring this architecture.
+
+This architecture is also expensive. It's not practical to run this architecture from a home server. Cloud infrastructure is required in all but the most exceptional of cases. Cloud infrastructure has a monthly cost. Stop paying and the infrastructure disappears like smoke. Hobby developers may be able to run this infrastructure at home, but they can not break out of the hobby-category without funding.
+
+## Web 3
+
+The Web 3.0 Cash Stack inserts a new layer into the middle of the stack. This is called the 'IPFS Layer' and it contains two pieces of software which are mirror images of one another:
+
+- *[IPFS Service Consumer](/docs/local-back-end/ipfs-bch-wallet-consumer)* - Provides a light-weight 'local' REST API, that proxies calls to a 'global' back end, over IPFS.
+- *[IPFS Service Provider](/docs/global-back-end/ipfs-bch-wallet-service)* - Receives data over IPFS, and proxies the network calls to the compute-heavy 'global' back end infrastructure.
+
+Front end developers can run *IPFS Service Consumer* as a light-weight 'local' back end. This pipes their network calls over the IPFS network to a remote 'global' back end. This reduces costs, improves reliability, and allows the p2p network to be built from home hardware and internet connections instead of centralized cloud servers.
+
+![Web 3 Cash Stack](../img/web-3-cash-stack.png)
+
+By adding these two new pieces of software, it decouples the expensive 'global' back end infrastructure, and proxies it to a much less expensive 'local' back end REST API. This has several advantages:
+
+- Because IPFS automatically handles the complex networking, it's much more pragmatic to run the expensive, global back end infrastructure from a home internet connection. This reduces the greatest cost of the Web 2.0 model.<br /><br />
+- By leveraging a p2p network of home computers, this architecture is extremely resistant to attempts at censorship.<br /><br />
+- Because of the decoupling, the _local back end_ is capable of using one-of-many instances of the _global back end_. It only needs to connect to one in order to succeed, and it can choose any instance on the network.
+
+If implemented correctly, the performance should be acceptable to the end-users. The extra IPFS layers add some latency, but it provides much lower cost. Whether this architecture is appropriate for end-users depends on the specific application. If there is no company to pay for web 2.0 architecture, this web 3.0 architecture may be the only pragmatic way for communities to set up financial infrastructure.
+
+This architecture really exceeds at censorship resistance, and providing low-cost infrastructure for hobbyists developers and local communities. Developers unfamiliar with running back end infrastructure, who want to focus primarily on front end applications, can run a single, simple app to provide the [Local Back End](/docs/local-back-end). Developers more comfortable with Dev Ops and running back end infrastructure, can provide the [Global Back End](/docs/global-back-end) infrastructure to the rest of the community, from the comfort (and cost-savings) of their own home. The [Permissionless Software Foundation](https://psfoundation.info) (PSF) is offering [Bounties](https://github.com/Permissionless-Software-Foundation/bounties) to incentivize hobby developers to run this global back end infrastructure.
+
+The rest of this documentation walks through the various software packages that the PSF maintains, and how they fit into the Cash Stack.

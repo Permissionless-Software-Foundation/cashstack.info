@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Front End
+# Web Apps
 
 The Cash Stack includes React templates for creating a web-based, non-custodial wallet. It includes [Capacitor](https://capacitorjs.com/) libraries to easily compile the apps into iOS and Android phone apps. The structure allows developers to fork their own white-labeled wallet, then quickly build and share extensions to the wallet app.
 
@@ -22,7 +22,7 @@ The fastest way to build a web app that communicates with a blockchain is the [r
 ## Back End Service
 The web wallet will need to connect to an instance of [ipfs-bch-wallet-consumer](/docs/intro) in order to communicate with the blockchain. You can run that service yourself, or you can use wallet services provided by the PSF community. The wallet service can be chosen by clicking the button at the bottom of the screen labeled 'Select a different back end server'.
 
-![Selecting a wallet service](./img/select-back-end.png)
+![Selecting a wallet service](../img/select-back-end.png)
 
 No private information (keys, mnemonics, etc) is ever sent to the back end service. The service simply provides access to the blockchain and indexers, so the web wallet can query data and broadcast transactions.
 

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Full Node
+# BCHN Full Node
 
-The bottom most layer in the Cash Stack is the Full Node. Every blockchain produces a full node, but not all full nodes can be operated on an normal desktop computer. The Cash Stack places a big emphasis on self-sufficiency and censorship resistance. The [PSF](https://psfoundation.info) maintains Docker containers for running full nodes on the Bitcoin Cash (BCH), eCash (XEC), and Avalanche (AVAX) blockchains.
+The bottom most layer in the Cash Stack is the Full Node. Every blockchain produces a full node, but not all full nodes can be operated on an normal desktop computer. The Cash Stack places a big emphasis on self-sufficiency and censorship resistance. The [PSF](https://psfoundation.info) maintains a Docker container for running a full node on the Bitcoin Cash (BCH) blockchain.
 
 ## BCHN Full Node
 
@@ -13,7 +13,6 @@ There are many full node implementations for BCH. The Cash Stack focuses on the 
 ### Links
 
 - [docker-bchn](https://github.com/Permissionless-Software-Foundation/docker-bchn) Docker containers
-- [CashStrap](https://fullstack.cash/cashstrap) pre-synced blockchain databases
 
 ### Videos
 

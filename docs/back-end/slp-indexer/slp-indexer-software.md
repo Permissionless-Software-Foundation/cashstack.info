@@ -10,7 +10,6 @@ SLP tokens are not tracked by the full node, but are instead tracked by a separa
 ## Links
 
 - [psf-slp-indexer](https://github.com/Permissionless-Software-Foundation/psf-slp-indexer) Docker containers
-- [CashStrap](https://fullstack.cash/cashstrap) pre-synced blockchain databases
 
 ## Videos
 

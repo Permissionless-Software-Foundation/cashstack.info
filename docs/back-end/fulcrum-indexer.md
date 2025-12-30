@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Fulcrum Indexer
@@ -11,7 +11,6 @@ The PSF maintains a set of Docker containers which wraps the Fulcrum indexer int
 ## Links
 
 - [docker-fulcrum](https://github.com/Permissionless-Software-Foundation/docker-fulcrum) Docker containers
-- [CashStrap](https://fullstack.cash/cashstrap) pre-synced blockchain databases
 
 ## Videos
 
