@@ -26,7 +26,7 @@ The web wallet will need to connect to an instance of [ipfs-bch-wallet-consumer]
 
 No private information (keys, mnemonics, etc) is ever sent to the back end service. The service simply provides access to the blockchain and indexers, so the web wallet can query data and broadcast transactions.
 
-The list of community-provided wallet services is dynamically loaded from [this JSON file](https://consumers.psfoundation.info/consumers.json). To run your own wallet service, you'll need to install the [Local Back End](/docs/local-back-end).
+The list of community-provided wallet services is dynamically loaded from [this JSON file](https://consumers.psfoundation.info/consumers.json).
 
 ## minimal-slp-wallet
 

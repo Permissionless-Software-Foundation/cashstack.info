@@ -30,7 +30,7 @@ While unintentional burning of SLP tokens is possible, the infrastructure around
 
 ## Scaling
 
-The [psf-slp-indexer](/docs/global-back-end/slp-indexer/slp-indexer-software) offers many options for scaling to indexer operators. There is no requirement in SLP to index every token, all of the time, by everyone. *psf-slp-indexer* has a *blacklist* array. Operators can add problematic tokens to this array, and they will be ignored by the indexer, eliminating any computational burden from tracking that token.
+The [psf-slp-indexer](slp-indexer-software) offers many options for scaling to indexer operators. There is no requirement in SLP to index every token, all of the time, by everyone. *psf-slp-indexer* has a *blacklist* array. Operators can add problematic tokens to this array, and they will be ignored by the indexer, eliminating any computational burden from tracking that token.
 
 In the future, a *whitelist* feature will be added. This will allow operators to track only the most popular tokens. Another business-friendly scenario: multiple instances of the indexer can be operated. One could use the whitelist to track the popular and business-sensitive tokens, another could track the general token population. If there are scaling issues with the general population, it would not effect the indexer tracking the business-sensitive tokens.
 

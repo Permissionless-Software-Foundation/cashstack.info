@@ -20,7 +20,7 @@ On startup, the psffpp-client creates a [Helia IPFS node](https://github.com/ipf
 
 ## ipfs-file-pin-service
 
-[ipfs-file-pin-service](https://github.com/Permissionless-Software-Foundation/ipfs-file-pin-service) runs on the same machine as the [SLP Token Indexer](./slp-indexer/slp-indexer-software.md). When the Indexer detects a *Pin Claim* on the blockchain, it sends the information to *ipfs-file-pin-service* via a webhook. The File Pin Service evaluates the data and will pin the file if it meets the requirements. That file is then available for download from that node. A network of these File Pin Services ensure the data is stored redundantly across the world.
+[ipfs-file-pin-service](https://github.com/Permissionless-Software-Foundation/ipfs-file-pin-service) runs on the same machine as the [SLP Token Indexer](/docs/back-end/slp-indexer/slp-indexer-software). When the Indexer detects a *Pin Claim* on the blockchain, it sends the information to *ipfs-file-pin-service* via a webhook. The File Pin Service evaluates the data and will pin the file if it meets the requirements. That file is then available for download from that node. A network of these File Pin Services ensure the data is stored redundantly across the world.
 
 ## Links
 

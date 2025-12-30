@@ -6,7 +6,7 @@ sidebar_position: 2
 
 The concept of a 'local' back end does not apply to the web 2 paradigm. It's a new concept that only applies in the scope of the web 3 Cash Stack.
 
-As illustrated in the [introduction](intro), web 2 architecture has a centralized back end which the front end interacts with directly. In our web3 architecture, apps connect to a light-weight 'local' back end, which then proxies the communication over [IPFS](https://ipfs.io) to a 'global' back end.
+As illustrated in the [introduction](/docs/intro), web 2 architecture has a centralized back end which the front end interacts with directly. In our web3 architecture, apps connect to a light-weight 'local' back end, which then proxies the communication over [IPFS](https://ipfs.io) to a 'global' back end.
 
 **The main advantages of the web 3 architecture is <u>reducing cost</u> and <u>improving censorship resistance</u>.**
 
@@ -14,7 +14,7 @@ As illustrated in the [introduction](intro), web 2 architecture has a centralize
 
 The core piece of software making up the local back end is [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer). This app provides a [REST API](https://free-bch.fullstack.cash/#api-REST_BCH) interface for front end apps to query data about the blockchain (and broadcast transactions).
 
-`ipfs-bch-wallet-consumer` is configured to connect to one-of-many global back end services. This connection can change on-the-fly during operation in order to optimize performance. `ipfs-bch-wallet-consumer` connects to its mirror-image on the global back end: [ips-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service). This connection happens by passing end-to-end encrypted (e2ee) messages over the [IPFS](https://ipfs.io) network, via a [Circuit Relay](/docs/local-back-end/circuit-relay).
+`ipfs-bch-wallet-consumer` is configured to connect to one-of-many global back end services. This connection can change on-the-fly during operation in order to optimize performance. `ipfs-bch-wallet-consumer` connects to its mirror-image on the global back end: [ips-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service). This connection happens by passing end-to-end encrypted (e2ee) messages over the [IPFS](https://ipfs.io) network, via a [Circuit Relay](circuit-relay).
 
 ![Web 3 Architecture](../img/local-back-end-dependencies.png)
 A dependency graph, showing how front end apps connect to Web 3 back end services.
@@ -75,4 +75,4 @@ The pay-to-write database ([P2WDB](https://github.com/Permissionless-Software-Fo
 
 ### Tokens
 
-`psf-bch-wallet` contains a series of commands for creating fungible and non-fungible (**NFT**) tokens. Explore the help for the `token-*` prefixed commands to learn more. Not only can you create and mint tokens, you can also set mutable (changeable) and immutable (unchangeable) data for the tokens (as per [PS002](https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps002-slp-mutable-data.md) and [PS007](https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps007-token-data-schema.md) specifications). This lets you set the token icon for your token, which will be displayed by [front end wallets](/docs/front-end).
+`psf-bch-wallet` contains a series of commands for creating fungible and non-fungible (**NFT**) tokens. Explore the help for the `token-*` prefixed commands to learn more. Not only can you create and mint tokens, you can also set mutable (changeable) and immutable (unchangeable) data for the tokens (as per [PS002](https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps002-slp-mutable-data.md) and [PS007](https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps007-token-data-schema.md) specifications). This lets you set the token icon for your token, which will be displayed by [front end wallets](/docs/front-end/web-apps).

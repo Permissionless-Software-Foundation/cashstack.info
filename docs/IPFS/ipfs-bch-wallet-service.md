@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # ipfs-bch-wallet-service
 
-[ipfs-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service) is a censorship-resistant, IPFS-based microservice that provides access for wallets to access the Bitcoin Cash (BCH) blockchain. It leverages [bch-js](https://github.com/Permissionless-Software-Foundation/bch-js) to communicate with a local instance of [bch-api](/docs/global-back-end/bch-api). This software proxies the HTTP-based, REST API of bch-api over an IPFS-based, JSON RPC. [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer) is the target software for consuming this service.
+[ipfs-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service) is a censorship-resistant, IPFS-based microservice that provides access for wallets to access the Bitcoin Cash (BCH) blockchain. It leverages [bch-js](https://github.com/Permissionless-Software-Foundation/bch-js) to communicate with a local instance of [psf-bch-api](/docs/back-end/psf-bch-api). This software proxies the HTTP-based, REST API of psf-bch-api over an IPFS-based, JSON RPC. [ipfs-bch-wallet-consumer](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-consumer) is the target software for consuming this service.
 
 ## Links
 
