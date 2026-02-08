@@ -23,6 +23,9 @@ This separation into three containers is a deliberate architectural choice. Beca
 
 - [psf-slp-indexer-g2](https://github.com/Permissionless-Software-Foundation/psf-slp-indexer-g2) &mdash; The indexer (block indexer + TX indexer)
 - [psf-slp-db](https://github.com/Permissionless-Software-Foundation/psf-slp-db) &mdash; The LevelDB database with REST API
+- [slp-tokens.com](https://slp-tokens.com) &mdash; Documentation about videos about the SLP token protocol
+- [TokenTiger.com](https://tokentiger.com) &mdash; Web app for creating SLP fungible tokens and NFTs
+- [SLPDEX.com](https://slpdex.com) &mdash; Decentralized exchange (DEX) for trading SLP tokens without need for trust or permission
 
 ## Videos
 
