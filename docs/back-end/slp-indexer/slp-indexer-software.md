@@ -13,6 +13,11 @@ SLP tokens are not tracked by the full node, but are instead tracked by a separa
 
 ## Videos
 
-### Part 1 - Downloading a pre-synced blockchain over IPFS
+### Installing the SLP Token Indexer
 
-<iframe width="540" height="295" src="https://www.youtube.com/embed/5gF4ON9lRHI" title="Install PSF SLP Indexer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="639" height="359" src="https://www.youtube.com/embed/GSL6dIF5h6w" title="Install BCH Full Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+
+### Downloading a Pre-Synced Database
+
+<iframe width="639" height="359" src="https://www.youtube.com/embed/YQfaJYX1aZ4" title="Install BCH Full Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+
