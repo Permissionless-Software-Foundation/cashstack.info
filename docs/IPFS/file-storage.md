@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Decentralized File Hosting
 
-This documentation accompanies the **Cash Stack: File Hosting** video and the [Completed Cash Stack Slide Deck](/img/The_Completed_Cash_Stack.pdf). While the video provides a high-level overview of how Bitcoin Cash (BCH) and IPFS are integrated, this page dives deeper into the technical protocols, economic incentives, and software components that make this decentralized architecture possible.
+This documentation accompanies the **Cash Stack: File Hosting** video and the [Completed Cash Stack Slide Deck](../img/The_Completed_Cash_Stack.pdf). While the video provides a high-level overview of how Bitcoin Cash (BCH) and IPFS are integrated, this page dives deeper into the technical protocols, economic incentives, and software components that make this decentralized architecture possible.
 
 <iframe width="639" height="359" src="https://www.youtube.com/embed/aa2yFjK7IzA" title="Cash Stack + IPFS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
