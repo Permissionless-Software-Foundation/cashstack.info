@@ -6,7 +6,7 @@ sidebar_position: 2
 
 [ipfs-file-pin-service](https://github.com/Permissionless-Software-Foundation/ipfs-file-pin-service) is an **optional** component of the IPFS layer in the [Cash Stack](/docs/intro). It runs a [Helia](https://github.com/ipfs/helia) IPFS node and a REST API server that provides **paid IPFS file pinning** using the [PSF File Pinning Protocol (PS010)](https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps010-file-pinning-protocol.md). This code base was forked from [ipfs-service-provider](https://github.com/Permissionless-Software-Foundation/ipfs-service-provider).
 
-![ipfs-file-pin-service dependency graph](../img/ipfs-file-pin-service-dependency-graph.png)
+![ipfs-file-pin-service dependency graph](../../img/ipfs-file-pin-service-dependency-graph.png)
 
 ipfs-file-pin-service sits at the top of the Cash Stack and depends on two pieces of infrastructure below it:
 
