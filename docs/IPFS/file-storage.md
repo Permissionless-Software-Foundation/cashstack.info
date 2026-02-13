@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Decentralized File Hosting
 
-This documentation accompanies the video. While the video provides a high-level overview of how Bitcoin Cash (BCH) and IPFS are integrated, this page dives deeper into the technical protocols, economic incentives, and software components that make this decentralized architecture possible.
+The 'IPFS Layer' is **optional** backend infrastructure that leverages the power of the Cash Stack and adds features of the Inter-Planetary File System (IPFS). 
+
+Both technologies compliment one another, by solving the others deficiencies. The blockchain guarantees availability of tamper-proof data, but it's not good at storing large content. IPFS is great at storing content, but it needs a permanent data layer (the blockchain) to coordinate file sharing.
 
 <iframe width="639" height="359" src="https://www.youtube.com/embed/lDqTd8UP2ws" title="Cash Stack + IPFS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
