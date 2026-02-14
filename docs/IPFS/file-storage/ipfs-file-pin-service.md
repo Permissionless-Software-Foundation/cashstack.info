@@ -344,7 +344,7 @@ The REST API is served on the configured `PORT` (default `5031`).
 
 In addition to the REST API, the service exposes a JSON-RPC interface over IPFS using [helia-coord](https://www.npmjs.com/package/helia-coord). This allows decentralized access without a direct HTTP connection. Available RPC methods include `pinClaim`, `getFileMetadata`, `getPins`, `users`, `auth`, and `about`.
 
-[psf-bch-wallet](https://github.com/Permissionless-Software-Foundation/psf-bch-wallet) is a CLI tool that can interact with this JSON-RPC API. See the [Local Back End](/docs/IPFS/local-back-end) documentation for more on `psf-bch-wallet`.
+[psf-bch-wallet](https://github.com/Permissionless-Software-Foundation/psf-bch-wallet) is a CLI tool that can interact with this JSON-RPC API. See the [Reduce Server Costs](/docs/IPFS/reduce-server-costs) documentation for more on `psf-bch-wallet`.
 
 ---
 
