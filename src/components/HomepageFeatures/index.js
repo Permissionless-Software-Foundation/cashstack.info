@@ -44,7 +44,7 @@ const FeatureList = [
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
-            to='https://psfoundation.cash/video/' target='_blank'
+            to='https://masteringbch.com' target='_blank'
           >
             Videos
           </Link>
