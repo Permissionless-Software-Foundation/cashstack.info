@@ -4,94 +4,103 @@ sidebar_position: 3
 
 # Web Apps
 
-The Cash Stack includes React templates for creating a web-based, non-custodial wallet. It includes [Capacitor](https://capacitorjs.com/) libraries to easily compile the apps into iOS and Android phone apps. The structure allows developers to fork their own white-labeled wallet, then quickly build and share extensions to the wallet app.
+The Cash Stack includes React templates for building web-based, non-custodial wallet apps on Bitcoin Cash. Both templates are built on the [Cash Stack](https://cashstack.info) web3 architecture, which provides a censorship-resistant back end for accessing the blockchain. They can be statically compiled, uploaded to [Filecoin](https://filecoin.io/), and served over IPFS&mdash;giving you a censorship-resistant front end to match. They can also be compiled into native Android apps using [react-bootstrap-web3-android](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-android).
 
-## React SPA
-The fastest way to build a web app that communicates with a blockchain is the [react-bootstrap-web3-spa template](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa). This template starts with [Create React App](https://create-react-app.dev/) and adds the [React Bootstrap library](https://react-bootstrap.github.io/) for easy layout. It also contains the [minimal-slp-wallet library](https://www.npmjs.com/package/minimal-slp-wallet) for interacting with the BCH blockchain. This template is appropriate for building any general-purpose blockchain-based app, as opposed to just a wallet.
+## react-bootstrap-web3-spa
 
-## White-Label Wallet
-[bch-wallet-web3-spa](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa) is forked from the above template. A live version of this code repository is available at [wallet.psfoundation.info](https://wallet.psfoundation.info). It has additional React components added to create a wallet with basic functionality:
+[react-bootstrap-web3-spa](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa) is a general-purpose React single page app (SPA) template for building blockchain-based web apps. It is the starting point for any Cash Stack web app, not just wallets.
+
+- [Live Demo on GitHub Pages](https://permissionless-software-foundation.github.io/react-bootstrap-web3-spa/)
+- [Live Demo on Filecoin](https://bafybeic3nuawgogcfjkxxstyqyg6dmzajvkxp55ccldipwmgiyuikhrq5y.ipfs.dweb.link/)
+- [Source Code](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa)
+
+Key features:
+
+- [react-bootstrap](https://react-bootstrap.github.io/) for style and layout
+- [minimal-slp-wallet](/docs/front-end/minimal-slp-wallet) for interacting with BCH and SLP tokens
+- A server-selection dropdown that lets users choose from redundant web3 back end servers
+- A customizable waiting modal for network calls
+- A collapsible navigation menu for loading different views
+- Static compilation for hosting on IPFS/Filecoin
+
+### Installation
+
+```bash
+git clone https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa
+cd react-bootstrap-web3-spa
+npm install
+npm start
+```
+
+Build for production with `npm run build`.
+
+## bch-wallet-web3-spa
+
+[bch-wallet-web3-spa](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa) is a non-custodial wallet app forked from react-bootstrap-web3-spa. It adds wallet-specific React components on top of the base template and pulls in upstream updates as they are made. A live version is available at [wallet.psfoundation.info](https://wallet.psfoundation.info).
+
+- [Live Demo](https://wallet.psfoundation.info)
+- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa)
+
+This repository is intended to be a boilerplate for creating BCH-based web apps. Developers and businesses are encouraged to fork it and customize it for their own needs. It includes the following wallet functionality:
+
 - Send and receive BCH
-- Send and recieve Tokens
+- Send and receive SLP tokens and NFTs
 - Display token icons
 - Backup, restore, and optimize the wallet
 - Sweep BCH and tokens from a paper wallet
 - Sign a message cryptographically
 
+### Installation
+
+```bash
+git clone https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa
+cd bch-wallet-web3-spa
+npm install
+npm start
+```
+
+Build for production with `npm run build`.
 
 ## Back End Service
-The web wallet will need to connect to an instance of [ipfs-bch-wallet-consumer](/docs/intro) in order to communicate with the blockchain. You can run that service yourself, or you can use wallet services provided by the PSF community. The wallet service can be chosen by clicking the button at the bottom of the screen labeled 'Select a different back end server'.
+
+Both web apps use [minimal-slp-wallet](/docs/front-end/minimal-slp-wallet) to communicate with the blockchain. The wallet library can connect to either Web 2 infrastructure ([psf-bch-api](/docs/back-end/psf-bch-api)) or Web 3 infrastructure ([ipfs-bch-wallet-consumer](/docs/IPFS/reduce-server-costs/ipfs-bch-wallet-consumer)). You can run these services yourself, or use wallet services provided by the PSF community.
+
+The back end server can be chosen at runtime by clicking the button at the bottom of the screen labeled "Select a different back end server".
 
 ![Selecting a wallet service](../img/select-back-end.png)
 
-No private information (keys, mnemonics, etc) is ever sent to the back end service. The service simply provides access to the blockchain and indexers, so the web wallet can query data and broadcast transactions.
+No private information (keys, mnemonics, etc.) is ever sent to the back end service. The service simply provides access to the blockchain and indexers so the app can query data and broadcast transactions.
 
 The list of community-provided wallet services is dynamically loaded from [this JSON file](https://consumers.psfoundation.info/consumers.json).
 
-## minimal-slp-wallet
-
-[minimal-slp-wallet](https://www.npmjs.com/package/minimal-slp-wallet) is a JavaScript library compiled for use in a front end browser app. It provides basic wallet functionality for working with BCH and SLP tokens. It can be configured to operate on either the Web 2 or Web 3 architecture. It also has an instance of [bch-js](https://bchjs.fullstack.cash/) embedded into the library.
-
 ## Example Apps
 
-Below is a list of example applications that have been built with the Cash Stack. The source code for each app is available for you to fork and hack on.
+Below is a list of example applications built with the Cash Stack. The source code for each app is available for you to fork and hack on.
 
-### Wallet.FullStack.Cash
+### Wallet
 
-[wallet.psfoundation.info](https://wallet.psfoundation.info) is an open source, white-label wallet. It provides a foundation upon which to build additional functionality. We encourage developers and businesses to fork this code base and customize it for their own needs.
+[wallet.psfoundation.info](https://wallet.psfoundation.info) is an open source, white-label wallet built from bch-wallet-web3-spa. It provides a foundation upon which to build additional functionality.
 
 - [Live Demo](https://wallet.psfoundation.info)
 - [Source Code](https://github.com/Permissionless-Software-Foundation/bch-wallet-web3-spa)
 
-### NFT Creator
-
-NFTs are the future of digital assets. They can represent anything from concert tickets, to works of art, to news items, to membership in a club, to just about anything you can imagine. Creating NFTs needs to be cheap and easy. This app let's you create an NFT in a few seconds for only a few cents of BCH.
-
-- [Live Demo](https://nft-creator.fullstack.cash/)
-- [Source Code](https://github.com/Permissionless-Software-Foundation/token-studio)
-
-### NFT Collector
-
-What good is it to create NFTs if you can't show them off?! The NFT Collector app will display any NFTs held by a Bitcoin Cash address. The address can be passed as part of the URL, which makes it easy to share on social media.
-
-- [Live Demo](https://nft-collector.fullstack.cash/?addr=bitcoincash:qzsgnyd826c6xw5y3y4ct6q2gvf3r8fmkqfvtzn6ef)
-- [Source Code](https://github.com/Permissionless-Software-Foundation/nft-collection)
-
 ### Balance Checker
 
-This is a simple demo of the React SPA template. Given a BCH address, it will report the balance for that address, similar to a block explorer. This a great beginner app for developers to start hacking on.
+A simple demo of the react-bootstrap-web3-spa template. Given a BCH address, it reports the balance for that address, similar to a block explorer. A great beginner app for developers to start hacking on.
 
 - [Live Demo](https://permissionless-software-foundation.github.io/react-bootstrap-web3-spa/)
 - [Source Code](https://github.com/Permissionless-Software-Foundation/react-bootstrap-web3-spa)
 
-
 ### Address Conversion
 
-There are a lot of different address formats used in crypto. This app is a slight variation on the Balance Checker app above. Given a BCH, SLP, legacy BTC, or eCash address, the app will convert it into its different address formats.
+Given a BCH, SLP, legacy BTC, or eCash address, this app converts it into its different address formats.
 
 - [Live Demo](https://address.fullstack.cash/)
 - [Source Code](https://github.com/Permissionless-Software-Foundation/web-app-address-conversion)
 
-
 ### Telegram and Discord Bots
 
-Crypto is all about community. But in order to communicate with your community, you must be able to filter out noise makers and spam bots.
-
-We created a custom chat bot that silences all newcomers by default. They can gain the ability to speak in your Telegram or Discord channel by completing a challenge, such as signing a message with the web wallet or claiming a token.
-
-Click the button below to join the PSF Telegram channel and try it out for yourself.
+A chat bot that silences all newcomers by default. They can gain the ability to speak in your Telegram or Discord channel by completing a challenge, such as signing a message with the web wallet or claiming a token.
 
 - [PSF Telegram channel](https://t.me/permissionless_software)
 - [Source Code](https://github.com/christroutner/vip-bot)
-
-
-
-### Decentralized Exchange
-
-Still under development, the PSF is in the process of building out a decentralized exchange (DEX) for trading SLP tokens on the BCH blockchain. These DEX's can be used to buy and sell fungible tokens and NFTs.
-
-The protocol we've developed is trustless, atomic, non-custodial, and peer-to-peer. These are important qualities that distinguish it from other DEXs in the industry. Learn more by visiting the demo.
-
-- [Live Demo](https://dex.psfoundation.info)
-- [Source Code](https://github.com/Permissionless-Software-Foundation/bch-dex)
-- [Documentation](https://dex-docs.psfoundation.info)
